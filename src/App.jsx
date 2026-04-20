@@ -41,6 +41,13 @@ export default function App() {
             <About />
             <ImageDivider />
             <Services />
+            <ImageDivider
+              image="mistral-gear-shift.jpg"
+              variant="craft"
+              eyebrow="Craft"
+            >
+              &ldquo;Every detail, considered.&rdquo;
+            </ImageDivider>
             <VehicleDivider />
             <Experience />
             <Coverage />

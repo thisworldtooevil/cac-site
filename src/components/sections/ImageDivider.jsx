@@ -5,7 +5,12 @@ import { useReducedMotion } from '../../hooks/useReducedMotion'
 
 const BASE = import.meta.env.BASE_URL
 
-export default function ImageDivider() {
+export default function ImageDivider({
+  image = 'cac-mistral-detail.jpg',
+  eyebrow,
+  variant,
+  children,
+}) {
   const sectionRef = useRef(null)
   const prefersReduced = useReducedMotion()
 
@@ -16,20 +21,31 @@ export default function ImageDivider() {
 
   const bgY = useTransform(scrollYProgress, [0, 1], [0, -80])
 
+  const defaultCopy = (
+    <>
+      One call. <span style={{ color: 'var(--gold)' }}>Everything handled.</span> That is the promise.
+    </>
+  )
+
+  const sectionClass = `image-divider${variant ? ` image-divider--${variant}` : ''}`
+
   return (
-    <section className="image-divider" ref={sectionRef}>
+    <section className={sectionClass} ref={sectionRef}>
       <motion.div
         className="image-divider-bg"
         style={{
-          backgroundImage: `url(${BASE}assets/cac-mistral-detail.jpg)`,
+          backgroundImage: `url(${BASE}assets/${image})`,
           y: prefersReduced ? 0 : bgY,
         }}
       />
       <div className="image-divider-overlay" />
       <div className="image-divider-content">
-        <SplitTextReveal as="blockquote">
-          One call. <span style={{ color: 'var(--gold)' }}>Everything handled.</span> That is the promise.
-        </SplitTextReveal>
+        <div className="image-divider-inner">
+          {eyebrow && <span className="divider-eyebrow">{eyebrow}</span>}
+          <SplitTextReveal as="blockquote">
+            {children || defaultCopy}
+          </SplitTextReveal>
+        </div>
       </div>
     </section>
   )
