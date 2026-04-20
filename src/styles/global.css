@@ -18,8 +18,8 @@
   --text: #9b978f;
   --text-light: #c8c3b8;
   --white: #f5f5f0;
-  --serif: 'Cormorant Garamond', Georgia, serif;
-  --sans: 'Outfit', -apple-system, sans-serif;
+  --serif: 'waverly-cf', Georgia, serif;
+  --sans: 'Inter', -apple-system, sans-serif;
 }
 
 html { font-size: 16px; }
@@ -39,6 +39,7 @@ body {
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
 button { font-family: inherit; }
+main { position: relative; }
 
 /* ═══════════════════════════════════════════
    LAYOUT
@@ -198,9 +199,9 @@ nav.scrolled {
 .hero-headline {
   font-family: var(--serif); font-weight: 300;
   font-size: clamp(46px, 7vw, 96px); line-height: 1.12;
-  color: var(--white); letter-spacing: -0.02em;
+  color: var(--white); letter-spacing: 0.04em;
 }
-.hero-headline em { font-style: italic; color: var(--gold); }
+.hero-headline em { color: var(--gold); }
 .hero-headline .split-line { overflow: hidden; }
 
 .hero-copy-right { max-width: 380px; padding-top: clamp(8px, 1vw, 16px); }
@@ -321,9 +322,9 @@ nav.scrolled {
 .statement-content h2 {
   font-family: var(--serif); font-weight: 300;
   font-size: clamp(34px, 5vw, 64px); color: var(--white);
-  line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 28px;
+  line-height: 1.15; letter-spacing: 0.04em; margin-bottom: 28px;
 }
-.statement-content h2 em { font-style: italic; color: var(--gold); }
+.statement-content h2 em { color: var(--gold); }
 .statement-content p {
   font-family: var(--sans);
   font-size: 14px; line-height: 1.9; color: rgba(245,245,240,0.45);
@@ -341,10 +342,10 @@ nav.scrolled {
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(60px,10vw,140px); }
 .about-left h2 {
   font-family: var(--serif); font-weight: 300; font-size: clamp(32px,4.5vw,54px);
-  line-height: 1.14; color: var(--white); letter-spacing: -0.02em;
+  line-height: 1.14; color: var(--white); letter-spacing: 0.04em;
   margin-top: 28px; margin-bottom: 36px;
 }
-.about-left h2 em { font-style: italic; color: var(--gold); }
+.about-left h2 em { color: var(--gold); }
 .about-left p { font-size: 15px; line-height: 1.9; color: var(--text); margin-bottom: 20px; }
 .client-list { list-style: none; margin-top: 24px; }
 .client-list li {
@@ -384,7 +385,7 @@ nav.scrolled {
   position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; z-index: 2;
 }
 .image-divider-content blockquote {
-  font-family: var(--serif); font-style: italic; font-weight: 300;
+  font-family: var(--serif); font-weight: 300;
   font-size: clamp(26px,3.8vw,48px); color: var(--white); text-align: center;
   max-width: 650px; padding: 0 24px; line-height: 1.3; letter-spacing: -0.01em;
 }
@@ -396,9 +397,9 @@ nav.scrolled {
 .services-header { display: grid; grid-template-columns: 1.2fr 1fr; gap: 80px; align-items: end; margin-bottom: clamp(64px,8vw,100px); }
 .services-header h2 {
   font-family: var(--serif); font-weight: 300; font-size: clamp(32px,4.5vw,54px);
-  line-height: 1.14; color: var(--white); letter-spacing: -0.02em; margin-top: 28px;
+  line-height: 1.14; color: var(--white); letter-spacing: 0.04em; margin-top: 28px;
 }
-.services-header h2 em { font-style: italic; color: var(--gold); }
+.services-header h2 em { color: var(--gold); }
 .services-header-right p { font-size: 14px; line-height: 1.9; color: var(--text); font-weight: 300; }
 /* Service cards use inline styles via React state (TWTE pattern) */
 .additional-services { margin-top: 64px; padding-top: 48px; border-top: 1px solid var(--border); }
@@ -425,9 +426,9 @@ nav.scrolled {
 }
 .experience-left h2 {
   font-family: var(--serif); font-weight: 300; font-size: clamp(30px,3.8vw,46px);
-  color: var(--white); letter-spacing: -0.02em; line-height: 1.15; margin-top: 28px; margin-bottom: 24px;
+  color: var(--white); letter-spacing: 0.04em; line-height: 1.15; margin-top: 28px; margin-bottom: 24px;
 }
-.experience-left h2 em { font-style: italic; color: var(--gold); }
+.experience-left h2 em { color: var(--gold); }
 .experience-left p { font-size: 14px; line-height: 1.9; color: var(--text); max-width: 400px; font-weight: 300; }
 .experience-right { display: flex; flex-direction: column; justify-content: center; padding: clamp(48px,6vw,80px) clamp(24px,5vw,80px); }
 .exp-steps { list-style: none; }
@@ -459,7 +460,7 @@ nav.scrolled {
 .coverage-wrap { text-align: center; }
 .coverage-wrap h2 {
   font-family: var(--serif); font-weight: 300; font-size: clamp(32px,4.5vw,54px);
-  color: var(--white); letter-spacing: -0.02em; margin-top: 28px; margin-bottom: clamp(48px,6vw,80px);
+  color: var(--white); letter-spacing: 0.04em; margin-top: 28px; margin-bottom: clamp(48px,6vw,80px);
 }
 .coverage-areas { display: flex; justify-content: center; flex-wrap: wrap; }
 .coverage-pill { padding: 16px clamp(20px,3vw,44px); position: relative; cursor: default; }
@@ -487,9 +488,9 @@ nav.scrolled {
 .contact-inner { text-align: center; position: relative; z-index: 1; }
 .contact h2 {
   font-family: var(--serif); font-weight: 300; font-size: clamp(38px,5.5vw,68px);
-  color: var(--white); line-height: 1.12; letter-spacing: -0.02em; margin-top: 28px; margin-bottom: 28px;
+  color: var(--white); line-height: 1.12; letter-spacing: 0.04em; margin-top: 28px; margin-bottom: 28px;
 }
-.contact h2 em { font-style: italic; color: var(--gold); }
+.contact h2 em { color: var(--gold); }
 .contact-sub { font-size: 15px; color: var(--text); max-width: 420px; margin: 0 auto 64px; line-height: 1.9; font-weight: 300; }
 .contact-grid { display: flex; justify-content: center; gap: clamp(40px,8vw,100px); margin-bottom: 72px; flex-wrap: wrap; }
 .contact-block { text-align: center; }
@@ -615,7 +616,7 @@ button:focus-visible,
 /* Mobile hero video */
 @media (max-width: 768px) {
   .hero-video-wrap video {
-    object-fit: contain;
+    object-fit: cover;
     background: var(--black);
   }
 }

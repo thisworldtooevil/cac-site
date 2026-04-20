@@ -23,7 +23,7 @@ export default function Contact() {
               </div>
               <div className="contact-block">
                 <p className="eyebrow">Email</p>
-                <a href="mailto:info@caliautoconcierge.com">info@caliautoconcierge.com</a>
+                <a href="mailto:contact@caliautoconcierge.com">contact@caliautoconcierge.com</a>
               </div>
               <div className="contact-block">
                 <p className="eyebrow">Visit</p>
@@ -32,7 +32,7 @@ export default function Contact() {
             </div>
           </ScrollReveal>
           <ScrollReveal>
-            <a href="mailto:info@caliautoconcierge.com?subject=Consultation%20Request" className="cta-btn">
+            <a href="mailto:contact@caliautoconcierge.com?subject=Consultation%20Request" className="cta-btn">
               <span>Schedule a Consultation</span>
             </a>
           </ScrollReveal>
