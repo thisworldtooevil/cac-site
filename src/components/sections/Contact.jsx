@@ -19,20 +19,20 @@ export default function Contact() {
             <div className="contact-grid">
               <div className="contact-block">
                 <p className="eyebrow">Call</p>
-                <a href="tel:3234230000">(323) 423-0000</a>
+                <a href="tel:3235550147">(323) 555-0147</a>
               </div>
               <div className="contact-block">
                 <p className="eyebrow">Email</p>
-                <a href="mailto:contact@caliautoconcierge.com">contact@caliautoconcierge.com</a>
+                <a href="mailto:info@example.com">info@example.com</a>
               </div>
               <div className="contact-block">
                 <p className="eyebrow">Visit</p>
-                <address>Beverly Hills, CA 90210</address>
+                <p className="contact-note">Serving greater Los Angeles by appointment.</p>
               </div>
             </div>
           </ScrollReveal>
           <ScrollReveal>
-            <a href="mailto:contact@caliautoconcierge.com?subject=Consultation%20Request" className="cta-btn">
+            <a href="mailto:info@example.com?subject=Consultation%20Request" className="cta-btn">
               <span>Schedule a Consultation</span>
             </a>
           </ScrollReveal>

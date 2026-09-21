@@ -69,8 +69,8 @@ export default function Loader({ onComplete }) {
         style={{ clipPath: 'inset(100% 0 0 0)' }}
       >
         <img
-          src={`${import.meta.env.BASE_URL}assets/CAC_WHITE_LOGO.png`}
-          alt="Cali Auto Concierge"
+          src={`${import.meta.env.BASE_URL}assets/lac-logo-white.png`}
+          alt="Luxury Auto Concierge"
           draggable={false}
         />
       </div>

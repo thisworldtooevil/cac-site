@@ -22,7 +22,7 @@ export default function About() {
               Your vehicles deserve the same standard as <em>everything else</em> in your life.
             </SplitTextReveal>
             <ScrollReveal>
-              <p>Cali Auto Concierge provides comprehensive vehicle management for high-net-worth individuals and their households. We take full responsibility for every automotive need so you and your team never have to think about it.</p>
+              <p>Luxury Auto Concierge provides comprehensive vehicle management for high-net-worth individuals and their households. We take full responsibility for every automotive need so you and your team never have to think about it.</p>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
               <p>We work directly with estate managers, house managers, personal assistants, and clients themselves to ensure every vehicle is maintained, protected, road-ready, and handled with absolute discretion.</p>

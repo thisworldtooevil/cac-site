@@ -48,11 +48,11 @@ export default function Navigation() {
             else window.scrollTo({ top: 0, behavior: 'smooth' })
           }}>
             <img
-              src={`${BASE}assets/CAC_WHITE_LOGO.png`}
+              src={`${BASE}assets/lac-logo-white.png`}
               alt=""
               className="nav-logo-img"
             />
-            Cali Auto <span>Concierge</span>
+            Luxury Auto <span>Concierge</span>
           </a>
           <ul className="nav-links">
             <li><a href="#services" onClick={(e) => scrollTo(e, '#services')}>Services</a></li>
@@ -77,10 +77,10 @@ export default function Navigation() {
         <a href="#experience" className="mobile-nav-link" onClick={(e) => scrollTo(e, '#experience')}>Experience</a>
         <a href="#coverage" className="mobile-nav-link" onClick={(e) => scrollTo(e, '#coverage')}>Coverage</a>
         <a href="#contact" className="mobile-nav-link" onClick={(e) => scrollTo(e, '#contact')}>Contact</a>
-        <a href="tel:3234230000" style={{
+        <a href="tel:3235550147" style={{
           fontFamily: 'var(--sans)', fontSize: '14px', letterSpacing: '2px',
           color: 'var(--gold-dim)', fontWeight: 300
-        }}>(323) 423-0000</a>
+        }}>(323) 555-0147</a>
       </div>
     </>
   )

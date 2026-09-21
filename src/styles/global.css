@@ -101,7 +101,7 @@ nav.scrolled {
   letter-spacing: 5px; text-transform: uppercase; color: var(--white);
   display: flex; align-items: center; gap: 14px;
 }
-.nav-logo-img { height: 34px; width: auto; }
+.nav-logo-img { height: 34px; width: auto; mix-blend-mode: screen; }
 .nav-logo span { color: var(--gold); font-weight: 400; }
 .nav-links { display: flex; gap: 48px; list-style: none; }
 .nav-links a {
@@ -515,7 +515,7 @@ nav.scrolled {
 .contact-block { text-align: center; }
 .contact-block .eyebrow { margin-bottom: 14px; justify-content: center; }
 .contact-block .eyebrow::before { display: none; }
-.contact-block a, .contact-block address {
+.contact-block a, .contact-block .contact-note {
   font-family: var(--serif); font-size: clamp(17px,2vw,24px); font-weight: 300;
   font-style: normal; color: var(--cream); transition: color 0.4s ease; display: block;
 }
@@ -540,7 +540,13 @@ nav.scrolled {
    ═══════════════════════════════════════════ */
 footer { padding: 40px 0; border-top: 1px solid var(--border); }
 .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
-.footer-left { font-family: var(--sans); font-size: 11px; color: var(--text); letter-spacing: 0.5px; font-weight: 300; }
+.footer-left {
+  display: flex; flex-direction: column; gap: 6px;
+  font-family: var(--sans); font-size: 11px; color: var(--text); letter-spacing: 0.5px; font-weight: 300;
+}
+.footer-credit { font-size: 10px; color: #7d7a72; }
+.footer-credit a { transition: color 0.4s ease; }
+.footer-credit a:hover { color: var(--gold); }
 .footer-right { display: flex; gap: 28px; }
 .footer-right a { font-family: var(--sans); font-size: 11px; color: var(--text); letter-spacing: 0.5px; transition: color 0.4s ease; font-weight: 300; }
 .footer-right a:hover { color: var(--gold); }
@@ -572,6 +578,7 @@ footer { padding: 40px 0; border-top: 1px solid var(--border); }
 .loader-logo-wrap img {
   width: clamp(180px, 25vw, 300px);
   height: auto;
+  mix-blend-mode: screen;
 }
 .loader-line {
   position: absolute; top: 50%; left: 50%;
@@ -626,6 +633,7 @@ button:focus-visible,
   .coverage-pill::after { display: none; }
   .contact-grid { flex-direction: column; align-items: center; gap: 36px; }
   .footer-inner { flex-direction: column; text-align: center; }
+  .footer-left { align-items: center; }
   .approaching-vehicle-image { max-width: 95vw; }
 }
 @media (max-width: 600px) {

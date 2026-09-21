@@ -3,10 +3,16 @@ export default function Footer() {
     <footer>
       <div className="container">
         <div className="footer-inner">
-          <span className="footer-left">&copy; 2026 Cali Auto Concierge. All rights reserved.</span>
+          <div className="footer-left">
+            <span>&copy; 2026 Luxury Auto Concierge. All rights reserved.</span>
+            <span className="footer-credit">
+              Concept site. Design and build by{' '}
+              <a href="https://thisworldtooevil.com" target="_blank" rel="noopener noreferrer">TWTE Media</a>.
+            </span>
+          </div>
           <div className="footer-right">
-            <a href="tel:3234230000">(323) 423-0000</a>
-            <a href="mailto:contact@caliautoconcierge.com">contact@caliautoconcierge.com</a>
+            <a href="tel:3235550147">(323) 555-0147</a>
+            <a href="mailto:info@example.com">info@example.com</a>
           </div>
         </div>
       </div>
